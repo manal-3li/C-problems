@@ -3,9 +3,9 @@
 
 int main()
 {
-int a=10, b=20;
-a=a+b;
-b=a-b;
-a=a-b;
+int a=10, b=20, temp;
+temp = a;
+a = b;
+b = temp;
 printf("After swap a=%d b=%d",a,b);
 }
