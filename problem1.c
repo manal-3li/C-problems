@@ -3,7 +3,7 @@
 
 int main()
 {
- double num, exp, result;
+ double base, exp, result;
     printf("Enter number: ");
     scanf("%lf", &base);
     printf("Enter exp: ");
@@ -11,6 +11,6 @@ int main()
 
     result = pow(base, exp);
 
-    printf("%.1lf^%.1lf = %.2lf", num, exp, result);
+    printf("%.1lf^%.1lf = %.2lf", base, exp, result);
 
 }
