@@ -18,6 +18,6 @@ int main()
       printf("%d leap year.", y);
    }
    else {
-      printf("%d leap year.", y);
+      printf("%d not leap year.", y);
    }
 
