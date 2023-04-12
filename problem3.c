@@ -1,28 +1,28 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
-{
-  char result;
-  double n1,n2;
+int main() {
+
+  char op;
+  double n1, n2;
   printf("Enter an operator (+, -, *, /): ");
-  scanf("%c", &result);
-  printf("Enter first number: ");
-  scanf("%lf", &n1);
-  printf ("Enter second number: ");
-  scanf("%1f", &n2);
+  scanf("%c", &op);
+  printf("Enter two operands: ");
+  scanf("%lf %lf", &n1, &n2);
 
-  switch (result) {
+  switch (op) {
     case '+':
-      printf("%.1lf + %.1lf = %.1lf", n1,n2,n1+n2);
+      printf("%.1lf + %.1lf = %.1lf", n1, n2, n1 + n2);
       break;
     case '-':
-      printf("%.1lf - %.1lf = %.1lf", n1,n2,n1-n2);
+      printf("%.1lf - %.1lf = %.1lf", n1, n2, n1 - n2);
       break;
     case '*':
-      printf("%.1lf * %.1lf = %.1lf",n1,n2,n1*n2);
+      printf("%.1lf * %.1lf = %.1lf", n1, n2, n1 * n2);
       break;
     case '/':
-      printf("%.1lf / %.1lf = %.1lf",n1,n2,n1/n2);
+      printf("%.1lf / %.1lf = %.1lf", n1, n2, n1 / n2);
       break;
-}  }
+
+    default:
+      printf("Error! operator is not correct");
+  }}
